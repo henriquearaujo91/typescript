@@ -56,7 +56,15 @@ console.log(soma("hen", "rique"));
 //cast
 let texto: string = "texto";
 
-let stringLength: number = (<string> texto).length;
+let stringLength: number = (<string>texto).length;
 let stringToUpperCase: string = (texto as string).toUpperCase();
 console.log(stringLength);
 console.log(stringToUpperCase);
+
+//Rest Parameters
+let textoResposta = (nome: string, ...skills: string[]) => {
+    return `${nome}
+    Habilidades: ${skills.join(',')}`;
+}
+
+console.log(textoResposta(text, "Java", "SQL", "TypeScripy"));

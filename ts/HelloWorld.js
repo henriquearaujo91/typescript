@@ -59,4 +59,13 @@ var stringLength = texto.length;
 var stringToUpperCase = texto.toUpperCase();
 console.log(stringLength);
 console.log(stringToUpperCase);
+//Rest Parameters
+var textoResposta = function (nome) {
+    var skills = [];
+    for (var _i = 1; _i < arguments.length; _i++) {
+        skills[_i - 1] = arguments[_i];
+    }
+    return nome + "\n    Habilidades: " + skills.join(',');
+};
+console.log(textoResposta(text, "Java", "SQL", "TypeScripy"));
 //# sourceMappingURL=HelloWorld.js.map
