@@ -53,4 +53,10 @@ function soma(numero1, numero2, numero3) {
 }
 console.log(soma(1, 2, 3));
 console.log(soma("hen", "rique"));
+//cast
+var texto = "texto";
+var stringLength = texto.length;
+var stringToUpperCase = texto.toUpperCase();
+console.log(stringLength);
+console.log(stringToUpperCase);
 //# sourceMappingURL=HelloWorld.js.map

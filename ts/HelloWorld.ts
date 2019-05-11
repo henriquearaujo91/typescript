@@ -52,3 +52,11 @@ function soma(numero1: any, numero2: any, numero3?: any): any {
 }
 console.log(soma(1, 2, 3));
 console.log(soma("hen", "rique"));
+
+//cast
+let texto: string = "texto";
+
+let stringLength: number = (<string> texto).length;
+let stringToUpperCase: string = (texto as string).toUpperCase();
+console.log(stringLength);
+console.log(stringToUpperCase);
