@@ -16,3 +16,29 @@ try {
 } catch (error) {
     console.log("Não foi executado via browser!!!");
 }
+
+//tipos
+let num: number = 10;
+let text: string = "Henrique Valença";
+let bool: boolean = true;
+
+if (bool != undefined || bool != null) {
+    console.log(text.replace('e', num.toString()));
+}
+
+text.split(" ").forEach(element => {
+    console.log(element.toLocaleUpperCase());
+    console.log(element.charAt(1));
+    console.log(element.indexOf("i"));
+});
+
+let list: number[] = [1, 2, 3];
+let list2: Array<number> = new Array;
+list2.push(4);
+
+let tuple: [number, string];
+tuple = [list2[0], "henrique"];
+console.log(tuple);
+
+enum DayOfWeek{SEGUNDA = 1, TERCA = 2, QUARTA = 3, QUINTA = 4}
+console.log(DayOfWeek.SEGUNDA);
