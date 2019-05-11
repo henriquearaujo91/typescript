@@ -44,4 +44,13 @@ var DayOfWeek;
     DayOfWeek[DayOfWeek["QUINTA"] = 4] = "QUINTA";
 })(DayOfWeek || (DayOfWeek = {}));
 console.log(DayOfWeek.SEGUNDA);
+console.log("" + list[2]);
+// variavel não obrigatoria numero3?
+function soma(numero1, numero2, numero3) {
+    if (numero3 !== undefined)
+        return numero1 + numero2 + numero3;
+    return numero1 + numero2;
+}
+console.log(soma(1, 2, 3));
+console.log(soma("hen", "rique"));
 //# sourceMappingURL=HelloWorld.js.map

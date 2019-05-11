@@ -40,5 +40,15 @@ let tuple: [number, string];
 tuple = [list2[0], "henrique"];
 console.log(tuple);
 
-enum DayOfWeek{SEGUNDA = 1, TERCA = 2, QUARTA = 3, QUINTA = 4}
+enum DayOfWeek { SEGUNDA = 1, TERCA = 2, QUARTA = 3, QUINTA = 4 }
 console.log(DayOfWeek.SEGUNDA);
+console.log(`${list[2]}`)
+
+// variavel não obrigatoria numero3?
+function soma(numero1: any, numero2: any, numero3?: any): any {
+    if (numero3 !== undefined)
+        return numero1 + numero2 + numero3;
+    return numero1 + numero2;
+}
+console.log(soma(1, 2, 3));
+console.log(soma("hen", "rique"));
