@@ -13,11 +13,14 @@ let calculaSoma = (nuemro1: number, numero2: number, ...listaNumeros: number[]) 
     return retorno + nuemro1 + numero2;
 }
 
+let arrowSoma = (numero1: number, numero2: number) => numero1 + numero2;
+
 try {
     console.log(calculaIOF(2, 0));
 } catch (error) {
+    console.log(arrowSoma(2, 3));
     console.log(error);
 } finally {
-    console.log(calculaSoma(1,2,3,4,5,6));
+    console.log(calculaSoma(1, 2, 3, 4, 5, 6));
     console.log(`Fim da operação!`);
 }

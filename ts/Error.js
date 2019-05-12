@@ -15,10 +15,12 @@ var calculaSoma = function (nuemro1, numero2) {
     });
     return retorno + nuemro1 + numero2;
 };
+var arrowSoma = function (numero1, numero2) { return numero1 + numero2; };
 try {
     console.log(calculaIOF(2, 0));
 }
 catch (error) {
+    console.log(arrowSoma(2, 3));
     console.log(error);
 }
 finally {
