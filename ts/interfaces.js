@@ -13,4 +13,17 @@ function detalhesVeicuo(carro) {
 }
 detalhesVeicuo({ modelo: "Ferrari", anoFabricacao: 2019 });
 detalhesVeicuo({ modelo: "BMW", anoFabricacao: 2018, licenciado: true });
+var ConsultaMedica = /** @class */ (function () {
+    function ConsultaMedica() {
+        this.dataAgendamento = new Date();
+    }
+    ConsultaMedica.prototype.setDataAgendamento = function (d) {
+        this.dataAgendamento = d;
+    };
+    return ConsultaMedica;
+}());
+var consultaMedica = new ConsultaMedica;
+console.log(consultaMedica.dataAgendamento);
+consultaMedica.setDataAgendamento(new Date);
+console.log(consultaMedica.dataAgendamento);
 //# sourceMappingURL=interfaces.js.map

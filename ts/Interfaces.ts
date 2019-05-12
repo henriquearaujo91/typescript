@@ -32,3 +32,24 @@ Ano de Fabricação: ${carro.anoFabricacao}`.concat(
 }
 detalhesVeicuo({ modelo: "Ferrari", anoFabricacao: 2019 });
 detalhesVeicuo({ modelo: "BMW", anoFabricacao: 2018, licenciado: true });
+
+interface IConsultaMedica {
+    dataAgendamento: Date;
+    setDataAgendamento(d: Date): void;
+}
+
+class ConsultaMedica implements IConsultaMedica {
+
+    dataAgendamento: Date;
+    setDataAgendamento(d: Date): void {
+        this.dataAgendamento = d;
+    }
+    constructor() {
+        this.dataAgendamento = new Date();
+    }
+}
+
+let consultaMedica = new ConsultaMedica;
+console.log(consultaMedica.dataAgendamento);
+consultaMedica.setDataAgendamento(new Date);
+console.log(consultaMedica.dataAgendamento);
