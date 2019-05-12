@@ -8,7 +8,7 @@
             "type": "node",
             "request": "launch",
             "name": "Launch Program",
-            "program": "${workspaceRoot}/ts/Interfaces.ts",
+            "program": "${workspaceRoot}/ts/Classes.ts",
             "outFiles": [
                 "${workspaceFolder}/**/*.js"
             ],

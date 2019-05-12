@@ -26,4 +26,4 @@ var consultaMedica = new ConsultaMedica;
 console.log(consultaMedica.dataAgendamento);
 consultaMedica.setDataAgendamento(new Date);
 console.log(consultaMedica.dataAgendamento);
-//# sourceMappingURL=interfaces.js.map
+//# sourceMappingURL=Interfaces.js.map

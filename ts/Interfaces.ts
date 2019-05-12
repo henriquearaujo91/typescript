@@ -49,7 +49,7 @@ class ConsultaMedica implements IConsultaMedica {
     }
 }
 
-let consultaMedica = new ConsultaMedica;
+let consultaMedica: ConsultaMedica = new ConsultaMedica;
 console.log(consultaMedica.dataAgendamento);
 consultaMedica.setDataAgendamento(new Date);
 console.log(consultaMedica.dataAgendamento);
