@@ -71,3 +71,6 @@ let carro: Carro = new Carro("HB20", 30500, Cor.Vermelho);
 
 console.log(notebook.getDesconto());
 console.log(carro.getDesconto());
+
+let pessoa3: PessoaFisica = new Funcionario("Bernardo", 3500);
+pessoa3.toString();

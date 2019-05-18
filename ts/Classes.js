@@ -82,4 +82,6 @@ var notebook = new Produto("MacBook Pro", 13000);
 var carro = new Carro("HB20", 30500, Cor.Vermelho);
 console.log(notebook.getDesconto());
 console.log(carro.getDesconto());
+var pessoa3 = new Funcionario("Bernardo", 3500);
+pessoa3.toString();
 //# sourceMappingURL=Classes.js.map
