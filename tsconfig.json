@@ -3,6 +3,7 @@
         "module": "amd",
         "target": "es5",
         "sourceMap": true, // faz o mapeamento do arquivo .ts com o arquivo .js
-        "strictNullChecks": true
+        "strictNullChecks": true,
+        "noImplicitThis": true
     }
 }

@@ -21,6 +21,26 @@ let somaArrow2 = (numero1: number, numero2: number) => { return numero1 + numero
 //ObjectArrow
 let objectArrow = (nome: string, idade: number) => ({ Nome: nome, Idade: idade });
 
-somaArrow(3,4);
-console.log(somaArrow2(4,5));
+somaArrow(3, 4);
+console.log(somaArrow2(4, 5));
 console.log(objectArrow("Henrique", 27));
+
+let objeto = {
+    nome: "Henrique",
+    idade: 27,
+    toString: function () {
+        return {
+            nome: "nivel2",
+            toString2: () => {
+                return this;
+            }
+        };
+    },
+    toString3: function () {
+        return this;
+    }
+}
+
+console.log(objeto.nome);
+console.log(objeto.toString());
+console.log(objeto.toString().toString2());

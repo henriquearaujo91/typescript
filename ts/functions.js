@@ -22,4 +22,23 @@ var objectArrow = function (nome, idade) { return ({ Nome: nome, Idade: idade })
 somaArrow(3, 4);
 console.log(somaArrow2(4, 5));
 console.log(objectArrow("Henrique", 27));
-//# sourceMappingURL=functions.js.map
+var objeto = {
+    nome: "Henrique",
+    idade: 27,
+    toString: function () {
+        var _this = this;
+        return {
+            nome: "nivel2",
+            toString2: function () {
+                return _this;
+            }
+        };
+    },
+    toString3: function () {
+        return this;
+    }
+};
+console.log(objeto.nome);
+console.log(objeto.toString());
+console.log(objeto.toString().toString2());
+//# sourceMappingURL=Functions.js.map
